@@ -1,0 +1,88 @@
+// ---------- input ----------------
+%input {
+    width: 100%;
+    padding: 10px 45px;
+    position: absolute;
+    border-radius: 8px;
+    border: 1px solid #0000003b;
+
+    &:focus {
+        outline: 1px solid #00ffcca3;
+    }
+}
+// ---------- buttons ---------------
+%btn {
+    width: 100%;
+    padding: 8px 45px;
+    border-radius: 8px;
+    border: 1px solid #0267ff3b;
+    background-color: #0080fff6;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        background-color: #006dd9f6;
+        box-shadow: 0 0 10px 5px #0000001e;
+    }
+}
+%btn_white {
+    width: 100%;
+    padding: 8px 45px;
+    border-radius: 8px;
+    border: 1px solid #0080ff;
+    background-color: #fff;
+    color: #0080fff6;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        border: 1px solid #0066cc;
+        box-shadow: 0 0 10px 5px #0000001e;
+    }
+}
+%btn_defoult {
+    width: 100%;
+    padding: 8px 45px;
+    border-radius: 8px;
+    border: 1px solid #01010135;
+    background-color: #e4e4e4;
+    color: #010101d3;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        background-color: #ffffff;
+    }
+}
+
+// fonts ----------------------------
+%font_m {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000aa;
+    padding: 3px 0;
+}
+%font_sm {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000aa;
+}
+%font_s {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000aa;
+}
+

@@ -1,0 +1,157 @@
+@import 'extend.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #ececec;
+}
+
+.form_login {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    padding: 20px;
+    column-gap: 100px;
+    font-family: "Poppins", sans-serif;
+
+    &-left {
+        width: 100%;
+
+        &-img {
+            width: 100%;
+            height: fit-content;
+            max-height: 94vh;
+        }
+    }
+
+    &-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+        justify-content: center;
+
+        &-head {
+            font-size: 31px;
+            font-weight: 500;
+            
+        }
+        &-info {
+            font-size: 18px;
+            font-weight: 500;
+            color: #00000078;
+        }
+        &-loginHead {
+            margin-top: 30px;
+            @extend %font_m;
+        }
+        &-loginInput {
+            position: relative;
+            
+            &-input {
+                @extend %input;
+            }
+            &-img {
+                position: absolute;
+                top: 7.5px;
+                left: 6px;
+            }
+        }
+        &-passwordHead {
+            margin-top: 10px;
+            @extend %font_m;
+        }
+        &-passwordInput {
+            position: relative;
+
+            &-input {
+                @extend %input;
+            }
+            &-img {
+                position: absolute;
+                height: 20px;
+                width: 24px;
+                top: 10.5px;
+                left: 6px;
+            }
+            &-hide {
+                position: absolute;
+                right: 15px;
+                top: 8.5px;
+            }
+        }
+        &-saveForgot {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            &-save {
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+
+                &-input {
+                    width: 17px;
+                    height: 17px
+                }
+                &-text {
+                    @extend %font_sm;
+                }
+            }
+            &-forgot {
+                @extend %font_sm;
+                color: #0f0fbdc0;
+            }
+        }
+
+        &-login {
+            margin-top: 10px;
+            @extend %btn;
+        }
+        &-create {
+            margin-top: 10px;
+            @extend %btn_white;
+        }
+        &-or {
+            border-bottom: 1px solid #00000044;
+            position: relative;
+            margin: 35px 10px 20px;
+            &-text {
+                padding: 0 7px;
+                background-color: #ececec;
+                color: #00000086;
+                position: absolute;
+                top: -11px;
+                left: 50%;
+                transform: translateX(-31px);
+                @extend %font_s;
+            }
+        }
+        &-asan {
+            margin-top: 10px;
+            @extend %btn_defoult;
+        }
+        &-fb {
+            margin-top: 10px;
+            @extend %btn_defoult;
+        }
+        &-google {
+            margin-top: 10px;
+            @extend %btn_defoult;
+        }
+
+        .errorMessage {
+            margin-top: 40px;
+            @extend %font_s;
+            color: rgb(133, 0, 0);
+        }
+    }
+}

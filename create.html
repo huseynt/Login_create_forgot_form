@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font end -->
+    <!-- link style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- script -->
+    <script defer src="./JS/create.js"></script>
+</head>
+<body>
+    
+    <section class="form_login">
+        <div class="form_login-left">
+            <img class="form_login-left-img" src="./assets/signin_az.png">
+        </div>
+
+        <form class="form_login-right">
+            <h3 class="form_login-right-head">Qeydiyyatdan keç</h3>
+            <h5 class="form_login-right-info">Məlumatlarınızı daxil edin</h5>
+
+            <label for="createAccountName" class="form_login-right-loginHead">Mobil nömrə</label>
+            <div id="createLoginInput" class="form_login-right-loginInput">
+                <input class="form_login-right-loginInput-input" id="createAccountName" type="text" placeholder="00 000 00 00">
+                <img class="form_login-right-loginInput-img" src="./assets/person.png" alt="account">
+            </div>
+            <span class="errorMessage"></span> 
+
+            <label for="createMail" class="form_login-right-passwordHead">E-mail</label>
+            <div id="createMailInput" class="form_login-right-passwordInput">
+                <input class="form_login-right-passwordInput-input" id="createMail" type="text" placeholder="abcd@mail.az">
+                <img class="form_login-right-passwordInput-img" src="./assets/lock.png" alt="hide">
+            </div>
+            <span class="errorMessage"></span> 
+
+
+            <div class="form_login-right-saveForgot">
+                <div class="form_login-right-saveForgot-save">
+                    <input class="form_login-right-saveForgot-save-input" id="createAgree" type="checkbox">
+                    <label id="createAgreeMessage" class="form_login-right-saveForgot-save-text" for="createAgree">"Davam et" düyməsini klik edərək, siz Hesab.az <a href="#" class="form_login-right-saveForgot-forgot">Qaydaları və Şərtləri</a> ilə razı olduğunuzu bildirmiş olursunuz</label>
+                </div>
+            </div>
+
+            <a class="form_login-right-login" id="createEnter">Davam et</a>
+            <a class="form_login-right-create" href="./index.html">Hesaba daxil olun</a>
+            <div class="form_login-right-or"><span class="form_login-right-or-text">və ya</span></div>
+
+            <button class="form_login-right-asan"><img class="form_login-right-asan-img" src="" alt="">Asan İmza ilə daxil ol</button>
+        </form>
+    </section>
+
+</body>
+</html>
